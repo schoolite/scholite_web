@@ -321,29 +321,7 @@ button{
 } */
 
   /* ACCOUNT */
-  #account{
-     margin-top: 100px;
-     background-image: url(../img/Rectangle\ 112.png);
-     padding: 40px;
-}
-.account-cont{
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-     align-items: center;
-     gap: 10px;
-}
-.gap{
-     gap: 50px;
-}
-.account-price{
-     color: #fff;
-     font-size: 34px;
-}
-.price-info{
-     font-size: 14px;
-     color: #38515D;
-}
+
 .active{
      color: #94A4AB;
 }
@@ -487,6 +465,7 @@ button{
      flex-direction: column;
      gap: 60px;
      background: #E9F6FC;
+     padding: 80px 0;
 }
  
 .teams-subs {
@@ -561,7 +540,7 @@ button{
      flex-direction: row;
 }
 
-.social-handle {
+#social-handle {
      background: #06212D;
      display: flex;
      justify-content: center;
@@ -1139,7 +1118,7 @@ button{
      }
 
      /* ACCOUNT */
-     .social-handle {
+     #social-handle {
           background: #ffffff;
           display: flex;
           justify-content: center;
