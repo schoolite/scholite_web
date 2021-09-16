@@ -612,7 +612,9 @@ button{
      }
      
      /* DONATE */
-    
+     #donate{
+          margin-top: 0;
+     }
      #donate .container{
           padding: 100px 60px;
      }
