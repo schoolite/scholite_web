@@ -488,6 +488,7 @@ button{
      display: flex;
      flex-direction: column;
      gap: 60px;
+     background: #E9F6FC;
 }
  
 .teams-subs {
@@ -1071,8 +1072,8 @@ button{
           display: flex;
           flex-direction: row;
           /* justify-content: space-between; */
-          gap: 668px;
-          padding: 1em 4em;
+          gap: 662px;
+          padding: 1em 2em;
      }
       
      .teams-subs h1 {
