@@ -359,6 +359,7 @@ button{
      flex-direction: column;
      height: 160vh;
      align-items: center;
+     margin-top: 35px;
 }
  
 .donation-foreward {
@@ -557,6 +558,62 @@ button{
      display: flex;
      align-items: center;
      flex-direction: row;
+}
+
+.social-handle {
+     background: #06212D;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 110vh;
+     margin-top: 35px;
+}
+ 
+.social-handle-primary {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: column;
+     background-position: center;
+     background-repeat: repeat;
+     background: #06212D;
+     height: 90vh;
+}
+ 
+.handle-primary-content {
+     display: flex;
+     flex-direction: row;
+     gap: 15px;
+}
+ 
+.primary-content h1 {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 51px;
+     line-height: 76px;
+     color: #FFFFFF;
+}
+ 
+.primary-content p {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 24px;
+     color: #38515D;
+}
+
+.v {
+     margin-left: 10px;
+}
+
+.c {
+     margin-left: 10px;
+}
+
+.i {
+     margin-left: -10px;
 }
 
 /* TABLET */
@@ -1081,22 +1138,52 @@ button{
      }
 
      /* ACCOUNT */
-     #account{
-          padding: 80px;
-     }
-     .account-cont{
+     .social-handle {
+          background: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50vh;
+      }
+      
+      .social-handle-primary {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
           flex-direction: row;
-          text-align: left;
-          gap: 5px;
-     }
-     .account-price{
-          font-size: 38px;
-     }
-     .price-info{
+          background-position: center;
+          background-repeat: repeat;
+          background: #06212D;
+          width: 1230px;
+          height: 30vh;
+      }
+      
+      .handle-primary-content {
+          display: flex;
+          flex-direction: row;
+          gap: 15px;
+      }
+      
+      .primary-content h1 {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 51px;
+          line-height: 76px;
+          color: #FFFFFF;
+      }
+      
+      .primary-content p {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 500;
           font-size: 16px;
-     }
+          line-height: 24px;
+          color: #38515D;
+      }
      .copyright{
           margin: 80px 0;
           font-size: 16px;
      }
+
 }
