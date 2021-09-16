@@ -7,13 +7,13 @@ html{
      scroll-behavior: smooth;
 }
 body{
-     font-family: sans-serif, "Poppins";
+     font-family: 'Poppins', sans-serif;
 }
 ul{
      list-style: none;
 }
 h1,h2,a,p{
-     font-family: sans-serif, "Poppins";
+     font-family: 'Poppins', sans-serif;
 }
 a{
      text-decoration: none;
@@ -354,6 +354,211 @@ button{
      font-size: 14px;
 }
 
+.donation-primary {
+     display: flex;
+     flex-direction: column;
+     height: 160vh;
+     align-items: center;
+}
+ 
+.donation-foreward {
+     background:#E9F6FC;
+     height: 85vh;
+     width: 96vw;
+     padding: 7em 3em;
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+}
+ 
+.donation-foreward h1 {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 36px;
+     line-height: 50px;
+     color: #06212D;
+     width: 350px;
+}
+ 
+.donation-foreward p {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 26px;
+     width: 300px;
+}
+ 
+.forms {
+     background: #06212D;
+     height: 70vh;
+     width: 96vw;
+     padding: 7em 3em;
+     display: flex;
+     flex-direction: column;
+     gap: 55px;
+}
+ 
+.button-shuffle {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+ 
+.button1 {
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+}
+ 
+.lines {
+     display: flex;
+     flex-direction: column;
+     gap: 9px;
+}
+ 
+.long {
+     width: 154px;
+     height: 2px;
+     left: 800px;
+     top: 1490px;
+     background: #29ABE2;
+}
+ 
+.short {
+     width: 221px;
+     height: 2px;
+     left: 868px;
+     top: 1507px;
+     background: #29ABE2;
+     opacity: 0.3;
+     margin-left: 60px;
+}
+ 
+.ash1 {
+     background: #94A4AB;
+     border: 1px solid #94A4AB;
+     padding: 9px 28px;
+     color: #ffffff;
+     font-weight: 400;
+     font-size: 18px;
+}
+ 
+.blue1 {
+     background: #29ABE2;
+     border: 1px solid #29ABE2;
+     padding: 9px 36px;
+     color: #ffffff;
+     font-weight: 400;
+     font-size: 18px;
+}
+ 
+.grey {
+     background: #E9F6FC;
+     border: 1px solid #E9F6FC;
+     padding: 9px 46px;
+     color: #000000;
+     font-weight: 400;
+     font-size: 18px;
+}
+ 
+.ash2 {
+     background: #94A4AB;
+     border: 1px solid #94A4AB;
+     padding: 9px 30px;
+     color: #ffffff;
+     font-weight: 400;
+     font-size: 18px;
+}
+ 
+.dark {
+     background: #38515D;
+     padding: 9px 38px;
+     border: 1px solid #38515D;
+     color: #ffffff;
+     font-weight: 400;
+     font-size: 18px;
+}
+
+.teams-primary {
+     display: flex;
+     flex-direction: column;
+     gap: 60px;
+}
+ 
+.teams-subs {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin: 0 auto;
+     gap: 10px;
+}
+ 
+.teams-subs h1 {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: 400;
+     font-size: 32px;
+     text-align: center;
+     color: #06212D;
+}
+ 
+.peeps {
+     background: #29ABE2;
+     border: 1px solid #29ABE2;
+     padding: 8px 32px;
+     color: #ffffff;
+     font-weight: 400;
+     font-size: 18px;
+     margin: 0 15px;
+}
+ 
+.team-row-contents {
+     display: flex;
+     flex-direction: column;
+     gap: 7px;
+}
+ 
+.team-row-contents img {
+     height: 250px;
+}
+
+.contents-flexed {
+     display: flex;
+     flex-direction: row;
+     gap: 7px;
+}
+
+.secondary-teams {
+     padding: 0em 5.3em;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     justify-content: center;
+}
+
+.teams-row {
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+     margin: 0 auto;
+}
+
+.teams-row-other {
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+     margin: 0 auto;
+}
+
+.donation-platform {
+     height: 80vh;
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+}
+
 /* TABLET */
 @media only screen and (min-width: 768px){
      .container{
@@ -584,9 +789,9 @@ button{
      }
      .row{
           display: flex;
-          justify-content: center;
+          justify-content: space-between;
           flex-direction: row;
-          gap: 400px;
+          gap: 500px;
           padding: 0em 2em;
      }
 
@@ -796,6 +1001,85 @@ button{
           bottom: 30px;
      } */
      
+     /* peeps */
+     .teams-primary {
+          display: flex;
+          flex-direction: column;
+          gap: 60px;
+     }
+      
+     .teams-subs {
+          display: flex;
+          flex-direction: row;
+          /* justify-content: space-between; */
+          gap: 668px;
+          padding: 1em 4em;
+     }
+      
+     .teams-subs h1 {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 52px;
+          color: #06212D;
+     }
+      
+     .peeps {
+          background: #29ABE2;
+          border: 1px solid #29ABE2;
+          padding: 10px 32px;
+          color: #ffffff;
+          font-weight: 400;
+          font-size: 18px;
+          margin-top: 16px;
+     }
+      
+     .peep {
+          background: #29ABE2;
+          border: 1px solid #29ABE2;
+          padding: 10px 32px;
+          color: #ffffff;
+          font-weight: 400;
+          font-size: 18px;
+          margin-top: 16px;
+     }
+      
+     .team-row-contents {
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+     }
+      
+     .team-row-contents img {
+          height: 395px;
+     }
+      
+     .contents-flexed {
+          display: flex;
+          flex-direction: row;
+          gap: 7px;
+     }
+      
+     .secondary-teams {
+          padding: 0em 4em;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: center;
+     }
+      
+     .teams-row {
+          display: flex;
+          flex-direction: row;
+          gap: 45px;
+     }
+      
+     .teams-row-other {
+          display: flex;
+          flex-direction: row;
+          gap: 45px;
+     }
+
      /* ACCOUNT */
      #account{
           padding: 80px;
