@@ -260,7 +260,7 @@ button{
 /* DONATE */
 #donate{
      margin-top: 50px;
-     background-color: #E9F6FC;
+     background-color: #fff;
 }
 #donate .container{
      position: relative;
@@ -754,7 +754,7 @@ button{
           margin-top: 0;
      }
      #donate .container{
-          padding: 100px 60px;
+          padding: 50px 60px;
      }
      .donate-row{
           flex-direction: row;
