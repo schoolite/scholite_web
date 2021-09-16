@@ -584,10 +584,9 @@ button{
      }
      .row{
           display: flex;
-          justify-content: center;
           flex-direction: row;
-          gap: 400px;
-          padding: 0em 2em;
+          gap: 300px;
+          padding: 0 60px;
      }
 
      .column{
@@ -618,6 +617,8 @@ button{
           background-image: url('../img/Polygon 6.png');
           background-size: 400px 400px;
           background-repeat: no-repeat;
+          height: 400px;
+          width: 400px;
      }
      
      /* skill */
