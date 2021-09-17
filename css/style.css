@@ -419,8 +419,12 @@ button{
 .teams-subs{
      display: flex;
      flex-direction: column;
-     gap: 30px;
-     margin-bottom: 50px;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     margin: 0 auto;
+     position: relative;
+     bottom: 18px;
 }
 
 .teams-subs h1 {
@@ -668,7 +672,7 @@ button{
           font-size: 13px;
      }
      .polygon5{
-          background-image: url('./img/Polygon 6.png');
+          /* background-image: url('../img/process.png'); */
           background-size: 400px 400px;
           background-repeat: no-repeat;
           height: 400px;
@@ -785,7 +789,10 @@ button{
      /* HEADEER */
      #header{
           height: 100vh;
-          background-size: 1350px 470px;
+          background-image: url('../img/left.png'), url('../img/line.png'), url('../img/right.png');
+          background-position: left bottom, center bottom, right bottom;
+          background-repeat: no-repeat, no-repeat, no-repeat;
+          background-size: 25%, 65%, 25%;
      }
      .nav{
           flex-direction: row;
@@ -1009,6 +1016,7 @@ button{
           font-weight: 600;
           font-size: 34px;
           color: #06212D;
+          margin-top: 17.5px;
      }
       
      .peeps {
