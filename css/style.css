@@ -375,9 +375,7 @@ button{
      text-align: center;
 }
 .donate-img{
-     width: 286px;
-     height: 274.71px;
-     margin: 0 auto; 
+     display: none;
 }
 .pack{
      display: flex;
