@@ -2,18 +2,25 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
 }
 html{
      scroll-behavior: smooth;
 }
 body{
-     font-family: sans-serif, "Poppins";
+     font-family: 'Poppins', sans-serif;
 }
 ul{
      list-style: none;
 }
 h1,h2,a,p{
-     font-family: sans-serif, "Poppins";
+     font-family: 'Poppins', sans-serif;
+}
+p{
+     color: #38515D;
+}
+h1,h2,h3{
+     color: #06212D;
 }
 a{
      text-decoration: none;
@@ -72,7 +79,7 @@ button{
 }
 .link{
      color: #c4c4c4;
-     font-size: 12px;
+     font-size: 14px;
      font-weight: 500;
      text-transform: capitalize;
 }
@@ -80,13 +87,23 @@ button{
      color: #fff;
      padding: 8px 16px;
      background-color: #29ABE2;
+     border: 1px solid #29ABE2;
      text-transform: capitalize;
      font-size: 12px;
+     transition: all .2s;
 }
-.outline{
-     background-color: transparent;
-     border: 1px solid #29ABE2;
+.btn:hover{
+     background-color: #fff;
      color: #29ABE2;
+}
+.white{
+     background-color: #fff;
+     color: #29ABE2;
+     transition: all .2s;
+}
+.white:hover{
+     background-color: #29ABE2;
+     color: #fff;
 }
 .main{
      margin-top: 50px;
@@ -99,7 +116,7 @@ button{
 .btn-cont{
      display: flex;
      flex-direction: row;
-     gap: 20px;
+     gap: 30px;
 }
 .heading-cont{
      display: flex;
@@ -225,28 +242,14 @@ button{
      text-align: center;
 }
 .desc-info{
-     display: flex;
-     flex-direction: column;
-     text-align: left;
-     align-items: flex-start;
-     gap: 20px;
-     margin-top: 30px;
-}
-.info-cont{
-     display: flex;
-     flex-direction: row;
-     padding: 0 5px;
-     gap: 10px;
-}
-.icon-cont{
-     color: #38515D;
-     font-size: 16px;
-     font-weight: 900;
-}
-.info{
      font-size: 14px;
      line-height: 26px;
      color: #38515D;
+     margin-top: 30px;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     text-align: center;
 }
 
 .col-2{
@@ -255,13 +258,92 @@ button{
 .polygon5{
      width: 200px;
      height: 200px;
-     margin: 50px 0;
 }
-/* DONATE */
-#donate{
-     margin-top: 50px;
+/* PEEP */
+#peep{
+     margin-top: 100px;
+     background-color: #E9F6FC;
+}
+.peep-cont{
+     padding-top: 50px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 50px;
+}
+.peep-heading-cont{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+}
+.peep-heading{
+     font-size: 28px;
+     text-align: center;
+     color: #06212D;
+}
+.peep-info{
+     font-size: 14px;
+     text-align: center;
+     padding: 0 20px;
+     color: #38515D;
+}
+.btn-col{
+     background-color: #06212D;
+     padding: 50px;
+}
+.col-cont{
+     display: flex;
+     flex-direction: column;
+     gap: 60px;
+}
+.line-cont{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+.line{
+     width: 100px;
+     height: 2px;
+}
+.color-btn-row{
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+}
+.color-btn-cont{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+.color-btn{
+     padding: 8px 20px;
+     font-size: 12px;
+     color: #fff;
+}
+.c-primary-dark{
+     background-color: #052735;
+}
+.relative{
+     position: relative;
+     left: 60px;
+}
+.c-primary{
+     background-color: #29ABE2;
+}
+.l-grey{
+     background-color: #94A4AB;
+}
+.white{
      background-color: #fff;
+     color: #333;
 }
+.d-grey{
+     background-color: #38515D;
+}
+
+
+/* DONATE */
 #donate .container{
      position: relative;
      display: flex;
@@ -320,10 +402,134 @@ button{
      font-size: 12px;
 } */
 
+/* TEAM */
+.teams-primary{
+     margin: 80px 0;
+}
+.team-row-contents {
+     display: flex;
+     flex-direction: column;
+     gap: 7px;
+}
+.teams-subs{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-bottom: 50px;
+}
+
+.teams-subs h1 {
+     font-style: normal;
+     font-weight: 600;
+     font-size: 24px;
+     color: #06212D;
+}
+ 
+.team-row-contents h1{
+     font-size: 16px;
+}
+.team-row-contents p{
+     font-size: 14px;
+}
+.team-row-contents img {
+     height: 250px;
+}
+
+.contents-flexed {
+     display: flex;
+     flex-direction: row;
+     gap: 7px;
+}
+
+.secondary-teams {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+}
+
+.teams-row {
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+     margin: 0 auto;
+}
+
+.teams-row-other {
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+     margin: 0 auto;
+}
+
+.donation-platform {
+     height: 80vh;
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+}
+
+.social-handle {
+     background: #06212D;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 110vh;
+     margin-top: 35px;
+}
+ 
+.social-handle-primary {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: column;
+     background-position: center;
+     background-repeat: repeat;
+     background: #06212D;
+     height: 90vh;
+}
+ 
+.handle-primary-content {
+     display: flex;
+     flex-direction: row;
+     gap: 15px;
+}
+ 
+.primary-content h1 {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 51px;
+     line-height: 76px;
+     color: #FFFFFF;
+}
+ 
+.primary-content p {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 24px;
+     color: #38515D;
+}
+
+.v {
+     margin-left: 10px;
+}
+
+.c {
+     margin-left: 10px;
+}
+
+.i {
+     margin-left: -10px;
+}
+
+
   /* ACCOUNT */
   #account{
-     margin-top: 100px;
-     background-image: url(../img/Rectangle\ 112.png);
+     background-color: #06212D;
      padding: 40px;
 }
 .account-cont{
@@ -338,10 +544,10 @@ button{
 }
 .account-price{
      color: #fff;
-     font-size: 34px;
+     font-size: 30px;
 }
 .price-info{
-     font-size: 14px;
+     font-size: 12px;
      color: #38515D;
 }
 .active{
@@ -376,7 +582,7 @@ button{
      }
      .btn{
           padding: 10px 18px;
-          font-size: 13px;
+          font-size: 16px;
      }
      .btn-lg{
           padding: 20px;
@@ -419,35 +625,93 @@ button{
      }
      
      /* DESCRIPTION */
-     #description{
-          margin-top: 200px;
+     .row{
+          flex-direction: column-reverse;
      }
-     .desc-heading{
-          font-size: 36px;
+
+     .column{
+          flex-direction: row;
+     }
+     .desc-heading h1{
+          font-family: Poppins;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 60px;
+          color: #06212D;
+     }
+     .desc-info{
+          font-size: 15px;
+          gap: 30px;
+          padding: 0 100px;
      }
 
      .info-cont{
-          padding: 0 10px;
+          padding: 0;
      }
      .icon-cont{
-          color: #38515D;
-          font-size: 18px;
-          font-weight: 900;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 22px;
      }
-     .info{
-          font-size: 15px;
-          line-height: 26px;
-          color: #38515D;
+     .info p{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
      }
      .polygon5{
-          width: 400px;
+          background-image: url('./img/Polygon 6.png');
+          background-size: 400px 400px;
+          background-repeat: no-repeat;
           height: 400px;
+          width: 400px;
      }
-     
+     /* PEEP */
+     #peep{
+          background-color: #E9F6FC;
+     }
+     .peep-heading-cont{
+          gap: 20px;
+     }
+     .peep-heading{
+          font-size: 30px;
+     }
+     .peep-info{
+          font-size: 15px;
+          padding: 0 100px;
+     }
+     .btn-col{
+          padding: 50px;
+     }
+     .col-cont{
+          display: flex;
+          flex-direction: column;
+          gap: 80px;
+     }
+     .line{
+          width: 150px;
+          height: 3px;
+     }
+     .color-btn-row{
+          gap: 25px;
+     }
+     .color-btn-cont{
+          gap: 25px;
+     }
+     .color-btn{
+          padding: 10px 22px;
+          font-size: 14px;
+     }
+     .relative{
+          position: relative;
+          left: 80px;
+     }
+     .white{
+          background-color: #fff;
+          color: #333;
+     }
+
      /* DONATE */
-     #donate{
-          margin-top: 50px;
-     }
+
      #donate .container{
           position: relative;
           display: flex;
@@ -472,21 +736,30 @@ button{
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 0 50px;
+          
      }
      /* .center{
           left: 40%;
      } */
+
+
      
      /* ACCOUNT */
      #account{
-          padding: 60px;
+          padding: 60px 20px;
+     }
+     .account-cont{
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          align-items: center;
+          gap: 10px;
      }
      .account-price{
-          font-size: 36px;
+          font-size: 34px;
      }
      .price-info{
-          font-size: 15px;
+          font-size: 14px;
      }
      
      .copyright{
@@ -520,15 +793,14 @@ button{
           gap: 76px;
      }
      .link{
-          font-size: 16px;
-          color: #38515D;
+          font-size: 18px;
           transition: all .2s;
      }
      .link:hover{
-          color: #c4c4c4;
+          color: #f6f6f6;
      }
      .btn{
-          padding: 12px 20px;
+          padding: 12px 25px;
           font-size: 14px;
      }
 
@@ -542,7 +814,6 @@ button{
      }
      .main-heading{
           font-size: 48px;
-          padding: 0 300px;
      }
      .main-info{
           font-size: 16px;
@@ -575,191 +846,100 @@ button{
           font-size: 14px;
      }
      
+     
      /* DESCRIPTION */
-     #description{
-          display: flex;
-          height: 70vh;
-          justify-content: center;
-          align-items: center;
-     }
      .row{
-          display: flex;
           flex-direction: row;
-          gap: 300px;
-          padding: 0 60px;
+          justify-content: space-between;
      }
-
      .column{
           flex-direction: row;
      }
-     .desc-heading h2{
-          font-family: Poppins;
-          font-weight: 600;
-          font-size: 48px;
-          line-height: 60px;
-          color: #06212D;
+     .desc-heading{
+          font-size: 32px;
+          width: 477px;
+          text-align: left;
      }
-
-     .info-cont{
-          padding: 0;
-     }
-     .icon-cont{
-          font-style: normal;
-          font-weight: normal;
-          font-size: 22px;
-     }
-     .info p{
-          font-style: normal;
-          font-weight: normal;
-          font-size: 13px;
+     .desc-info{
+          font-size: 16px;
+         display: flex;
+         flex-direction: column;
+         padding-right: 100px;
+         padding-left: 0;
+         gap: 40px;
+          text-align: left;
      }
      .polygon5{
-          background-image: url('../img/Polygon 6.png');
-          background-size: 400px 400px;
-          background-repeat: no-repeat;
-          height: 400px;
-          width: 400px;
+          width: auto;
+          height: auto;
      }
-     
-     /* skill */
-     .donation-primary {
-          display: flex;
-          flex-direction: row;
-          height: 105vh;
-          align-items: center;
-     }
-      
-     .donation-foreward {
-          background:#E9F6FC;
-          height: 85vh;
-          width: 50vw;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 0em 5em;
-     }
-      
-     .donation-foreward h1 {
-          background:#E9F6FC;
-          font-family: Poppins;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 36px;
-          line-height: 50px;
-          color: #06212D;
-     }
-      
-     .donation-foreward p {
-          font-family: Poppins;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 26px;
-          width: 492px;
-     }
-      
-     .forms {
-          background: #06212D;
-          height: 85vh;
-          width: 50vw;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          padding: 0em 5em;
-     }
-      
-     .button-shuffle {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-     }
-      
-     .button1 {
-          display: flex;
-          flex-direction: row;
-          gap: 20px;
-     }
-      
-     .lines {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-     }
-      
-     .long {
-          width: 154px;
-          height: 4px;
-          left: 800px;
-          top: 1490px;
-          background: #29ABE2;
-     }
-      
-     .short {
-          width: 221px;
-          height: 4px;
-          left: 868px;
-          top: 1507px;
-          background: #29ABE2;
-          opacity: 0.3;
-          margin-left: 60px;
-     }
-      
-     .ash1 {
-          background: #94A4AB;
-          border: 1px solid #94A4AB;
-          padding: 7px 28px;
-          color: #ffffff;
-          font-weight: 400;
-          font-size: 18px;
-     }
-      
-     .blue1 {
-          background: #29ABE2;
-          border: 1px solid #29ABE2;
-          padding: 7px 36px;
-          color: #ffffff;
-          font-weight: 400;
-          font-size: 18px;
-     }
-      
-     .grey {
-          background: #E9F6FC;
-          border: 1px solid #E9F6FC;
-          padding: 7px 46px;
-          color: #000000;
-          font-weight: 400;
-          font-size: 18px;
-     }
-      
-     .ash2 {
-          background: #94A4AB;
-          border: 1px solid #94A4AB;
-          padding: 7px 30px;
-          color: #ffffff;
-          font-weight: 400;
-          font-size: 18px;
-     }
-      
-     .dark {
-          background: #38515D;
-          padding: 7px 38px;
-          border: 1px solid #38515D;
-          color: #ffffff;
-          font-weight: 400;
-          font-size: 18px;
-     }
-      
 
-     /* DONATE */
-     #donate{
-          margin-top: 0;
+     /* PEEP */
+     #peep{
+          margin: 100px 0;
+          background-color: #E9F6FC;
      }
+     .peep-cont{
+          padding-top: 0;
+          flex-direction: row;
+          justify-content: space-between;
+     }
+     .peep-heading-cont{
+          gap: 20px;
+          width: 50%;
+          align-items: flex-start;
+     }
+     .peep-heading{
+          font-size: 32px;
+          text-align: left;
+     }
+     .peep-info{
+          font-size: 16px;
+          text-align: left;
+          padding-right: 100px;
+          line-height: 26px;
+          padding-left: 0;
+     }
+     .btn-col{
+          padding: 50px 80px;
+          width: 50%;
+     }
+     .col-cont{
+          display: flex;
+          flex-direction: column;
+          gap: 100px;
+     }
+     .line{
+          width: 200px;
+          height: 4px;
+     }
+     .color-btn-row{
+          display: flex;
+          flex-direction: row;
+          gap: 30px;
+     }
+     .color-btn-cont{
+          gap: 30px;
+     }
+     .color-btn{
+          padding: 10px 25px;
+          font-size: 16px;
+     }
+     .relative{
+          position: relative;
+          left: 100px;
+     }
+     .white{
+          background-color: #fff;
+          color: #333;
+     }
+
+       /* DONATE */
      #donate .container{
-          padding: 50px 60px;
+          padding: 60px;
      }
      .donate-row{
           flex-direction: row;
-          gap: 100px;
           align-items: flex-end;
      }
      .col{
@@ -796,6 +976,83 @@ button{
           left: 60px;
           bottom: 30px;
      } */
+
+     /* TEAM */
+      .teams-primary {
+           margin: 100px 0;
+          display: flex;
+          flex-direction: column;
+          gap: 60px;
+     }
+      
+     .teams-subs {
+          display: flex;
+          flex-direction: row;
+          /* justify-content: space-between; */
+          gap: 662px;
+     }
+      
+     .teams-subs h1 {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 34px;
+          color: #06212D;
+     }
+      
+     .peeps {
+          background: #29ABE2;
+          border: 1px solid #29ABE2;
+          padding: 12px 19px;
+          color: #ffffff;
+          font-weight: 400;
+          font-size: 16px;
+          margin-top: 16px;
+     }
+      
+      
+     .team-row-contents {
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+     }
+     .team-row-contents h1{
+          font-size: 24px;
+     }
+     .team-row-contents p{
+          font-size: 18px;
+     }
+      
+     .team-row-contents img {
+          height: 395px;
+     }
+      
+     .contents-flexed {
+          display: flex;
+          flex-direction: row;
+          gap: 7px;
+     }
+      
+     .secondary-teams {
+          padding: 0em 4em;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: center;
+     }
+      
+     .teams-row {
+          display: flex;
+          flex-direction: row;
+          gap: 45px;
+     }
+      
+     .teams-row-other {
+          display: flex;
+          flex-direction: row;
+          gap: 45px;
+     }
+
      
      /* ACCOUNT */
      #account{
