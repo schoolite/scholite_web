@@ -2,6 +2,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
 }
 html{
      scroll-behavior: smooth;
@@ -219,8 +220,9 @@ button{
      flex-direction: column;
 }
 .desc-heading{
-     font-size: 34px;
-     line-height: 50px;
+     font-size: 26px;
+     line-height: 20px;
+     margin-bottom: 3px;
      color: #06212D;
      text-align: center;
 }
@@ -253,9 +255,7 @@ button{
      display: flex;
 }
 .polygon5{
-     width: 200px;
-     height: 200px;
-     margin: 50px 0;
+
 }
 /* DONATE */
 #donate{
@@ -682,8 +682,7 @@ button{
           color: #38515D;
      }
      .polygon5{
-          width: 400px;
-          height: 400px;
+
      }
      
      /* DONATE */
@@ -828,7 +827,7 @@ button{
           display: flex;
           justify-content: space-between;
           flex-direction: row;
-          gap: 500px;
+          /* gap: 500px; */
           padding: 0em 2em;
      }
 

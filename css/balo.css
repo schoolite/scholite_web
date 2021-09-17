@@ -1,0 +1,146 @@
+
+:root {
+    --primary_color--dark: #06212D;
+    --primary_color--light: #29ABE2; 
+
+    --secondary_color--dark: #E9F6FC;
+    --secondary_color--light: #FFFFFF;
+
+    --padding-sm: .8rem;
+    --padding-md: 1.6rem;
+    --padding-lg: 3.2rem;
+
+    --text-1: #06212D;
+    --text-2: #38515D;
+    --text-3: #94A4AB;
+
+    --font-sm: 1.4rem;
+    --font-md: 1.6rem;
+    --font-lg: 1.8rem;
+
+    --h1: 7.2rem;
+    --h2: 5.6rem;
+    --h3: 4.8rem;
+    --h4: 3.6rem;
+    --h5: 2.4rem;
+
+    --border-color: #94A4AB;
+}
+
+html {
+    font-size: 10px;
+}
+
+body{
+    text-rendering: optimizeLegibility;
+    line-height: 1.7;
+    box-sizing: inherit;
+    font-family: "Poppins";
+    font-weight: normal;
+    padding-bottom: 5rem;
+}
+
+h2{
+    font-size: var(--h3);
+    text-align: center;
+    color: var(--text-1);
+}
+
+.desc {
+    text-align: center;
+    font-size: var(--font-md);
+}
+
+.plans_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    padding: 4rem 4rem 0 4rem;
+}
+
+.plan{
+    position: relative;
+    padding: 3rem 1.5rem;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: var(--secondary_color--light);
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.plan_header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 2rem 0;
+}
+
+.plan_header .title {
+    text-align: center;
+    font-size: var(--h5);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.plan_header .title::after {
+    display: block;
+    content: " ";
+    width: 10%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--primary_color--light);
+    margin: 1rem auto 0;
+}
+
+.plan_header .price{
+    text-align: center;
+    font-size: var(--h2);
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+.plan_header .lead{
+    font-size: var(--font-md);
+    display: block;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.plan_body{
+    padding: 2rem 0;
+}
+
+.plan_body .list{
+    list-style: none;
+}
+
+.plan_body .list li{
+    padding: .5rem 0;
+    font-size: var(--font-lg);
+}
+
+.plan_body .list li i{
+    padding-right: 8px;
+    color: var(--primary_color--light)
+}
+
+
+.plan_footer{
+    position: relative;
+    height: 100%;
+}
+.btn{
+    width: 100%;
+    padding: 1.4rem 2.8rem;
+    color: var(--secondary_color--light);
+    background-color: var(--primary_color--light);
+    border: none;
+    font-size: var(--font-lg);
+    border-radius: 6px;
+}
+.btn:hover{
+    color: var(--primary_color--dark);
+    background-color: var(--secondary_color--light);
+    border: 1px solid var(--primary_color--light);
+}
