@@ -420,8 +420,11 @@ button{
      display: flex;
      flex-direction: column;
      justify-content: center;
-     gap: 30px;
+     align-items: center;
+     gap: 10px;
      margin: 0 auto;
+     position: relative;
+     bottom: 18px;
 }
 
 .teams-subs h1 {
