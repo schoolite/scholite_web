@@ -785,7 +785,9 @@ button{
      /* HEADEER */
      #header{
           height: 100vh;
-          background-size: 1350px 470px;
+          background-image: url('../img/Polygon 6.png'), url('../img/Polygon 6.png');
+          background-position: right bottom, left top;
+          background-repeat: no-repeat, no-repeat;
      }
      .nav{
           flex-direction: row;
