@@ -403,8 +403,13 @@ button{
 } */
 
 /* TEAM */
+#teams{
+     background-color: #E9F6FC;
+     height: 100%;
+     width: 100%;
+}
 .teams-primary{
-     margin: 80px 0;
+     padding: 80px 0;
 }
 .team-row-contents {
      display: flex;
@@ -886,7 +891,7 @@ button{
      }
      .peep-heading-cont{
           gap: 20px;
-          width: 50%;
+          /* width: 50%; */
           align-items: flex-start;
      }
      .peep-heading{
@@ -902,7 +907,7 @@ button{
      }
      .btn-col{
           padding: 50px 80px;
-          width: 50%;
+          width: 70%;
      }
      .col-cont{
           display: flex;
