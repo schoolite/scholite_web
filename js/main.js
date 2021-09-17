@@ -8,7 +8,7 @@ menu.addEventListener('click', function(){
 })
 
 var popup = document.querySelector(".popup");
-var donate = document.querySelectorAll(".donate");
+var donate = document.querySelector(".donate");
 var closeButton = document.querySelector(".close");
 
 function toggleModal() {

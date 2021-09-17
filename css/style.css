@@ -416,8 +416,8 @@ button{
 }
 .teams-subs{
      display: flex;
-     flex-direction: row;
-     justify-content: space-between;
+     flex-direction: column;
+     gap: 30px;
      margin-bottom: 50px;
 }
 
@@ -991,7 +991,7 @@ button{
      .teams-subs {
           display: flex;
           flex-direction: row;
-          /* justify-content: space-between; */
+          justify-content: space-between;
           gap: 662px;
      }
       
