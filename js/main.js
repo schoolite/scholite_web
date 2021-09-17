@@ -1,15 +1,14 @@
 const menu = document.querySelector('.menu');
 const list = document.querySelector('.list');
-// const donateBtn = document.querySelector('.donate');
-// const popup = document.querySelector('popup');
+const donateBtn = document.querySelectorAll('.donate-btn');
+const popup = document.querySelector('.popup');
+const closeButton = document.querySelector(".close");
 
 menu.addEventListener('click', function(){
      list.classList.toggle('show');
 })
 
-var popup = document.querySelector(".popup");
-var donate = document.querySelector(".donate");
-var closeButton = document.querySelector(".close");
+
 
 function toggleModal() {
     popup.classList.toggle("show-popup");
@@ -20,16 +19,18 @@ function windowOnClick(event) {
         toggleModal();
     }
 }
-function modalClose(){
-     if(location.hash == '.donate'){
-          location.hash = 27;
-     }
-}
-document.addEventListener('keyup', function(e){
-     if (e.keyCode == 27) {
-          modalClose();
-      }
+
+donateBtn.forEach(btn => {
+     btn.addEventListener("click", toggleModal);
 })
-donate.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", (e)=>{
+     e.preventDefault();
+     toggleModal();
+});
 window.addEventListener("click", windowOnClick);
+window.addEventListener("keypress", (e) =>{
+     if(e.code === 'esc'){
+          windowOnClick();
+     }
+
+})
