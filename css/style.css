@@ -276,6 +276,7 @@ button{
      flex-direction: column;
      align-items: center;
      gap: 20px;
+     padding-left: 60px;
 }
 .peep-heading{
      font-size: 28px;
@@ -297,6 +298,7 @@ button{
      flex-direction: column;
      gap: 60px;
 }
+
 .line-cont{
      display: flex;
      flex-direction: column;
@@ -473,7 +475,7 @@ button{
      flex-direction: row;
 }
 
-.social-handle {
+#social-handle {
      background: #06212D;
      display: flex;
      justify-content: center;
@@ -562,7 +564,11 @@ button{
      margin: 40px 0;
      font-size: 14px;
 }
+/* utilities */
 
+.p-0{
+     padding:0 !important;
+}
 /* TABLET */
 @media only screen and (min-width: 768px){
      .container{
@@ -853,6 +859,7 @@ button{
      /* DESCRIPTION */
      .row{
           flex-direction: row;
+          padding: 0em 2em;
           justify-content: space-between;
      }
      .column{
@@ -1059,6 +1066,29 @@ button{
 
      
      /* ACCOUNT */
+     #social-handle {
+          background: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50vh;
+      }
+      
+      .social-handle-primary {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: row;
+          background-position: center;
+          background-repeat: repeat;
+          background: #06212D;
+          width: 1230px;
+          height: 30vh;
+      }
+      
+     .handle-primary-content {
+          display: flex;
+     }
      #account{
           padding: 80px;
      }
