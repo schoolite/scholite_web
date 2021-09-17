@@ -225,7 +225,7 @@ button{
 
   /* DESCRIPTION */
   #description{
-     margin-top: 200px;
+     /* margin-top: 100px; */
 }
 .row{
      display: flex;
@@ -866,7 +866,6 @@ button{
      /* DESCRIPTION */
      .row{
           flex-direction: row;
-          padding: 0em 2em;
           justify-content: space-between;
      }
      .column{
@@ -874,14 +873,14 @@ button{
      }
      .desc-heading{
           font-size: 32px;
-          width: 477px;
+          /* width: 477px; */
           text-align: left;
      }
      .desc-info{
           font-size: 16px;
          display: flex;
          flex-direction: column;
-         padding-right: 100px;
+         padding-right: 0px;
          padding-left: 0;
          gap: 40px;
           text-align: left;
